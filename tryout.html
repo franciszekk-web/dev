@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remembering Auschwitz - Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #eee;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #ff4c4c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #ff4c4c;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #eee;
+    }
+    nav a.active, nav a:hover {
+      color: #ff4c4c;
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Auschwitz_Birkenau_Barracks_10.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 0 2rem;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      color: #eee;
+    }
+    .hero-content h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #ff4c4c;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #cc3a3a;
+    }
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff4c4c;
+      border-bottom: 3px solid #ff4c4c;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+    footer {
+      background-color: #111;
+      color: #666;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+    @media (max-width: 600px) {
+      .hero-content h2 {
+        font-size: 2rem;
+      }
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+      header h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Remembering Auschwitz</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="stories.html">Stories</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Remembering Auschwitz:<br>History, Memory, and Legacy</h2>
+      <p>Explore the stories, learn the history, and honor the victims of one of the darkest chapters in human history.</p>
+      <a href="about.html" class="btn">Learn More</a>
+      <a href="stories.html" class="btn">Explore Stories</a>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h3>About Auschwitz</h3>
+      <p>Auschwitz was the largest Nazi concentration and extermination camp during World War II, where over 1.1 million people were murdered. It remains a powerful symbol of the Holocaust and the consequences of hatred and intolerance.</p>
+    </section>
+
+    <section>
+      <h3>Survivor Stories</h3>
+      <p>Personal testimonies and accounts from survivors bring human faces to the history and remind us of the resilience of the human spirit. These stories are vital to remembering and educating future generations.</p>
+    </section>
+
+    <section>
+      <h3>Educational Resources</h3>
+      <p>Access lesson plans, articles, documentaries, and archival materials to deepen your understanding of the Holocaust and help spread awareness of its lessons.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Remembering Auschwitz | All rights reserved
+  </footer>
+</body>
+</html> 
